@@ -1,0 +1,19 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 'Header Header Header Header Header' 
+    'Menu Menu Main Main Right Right' 'Menu Menu Footer Footer Footer Footer';
+    background-color: lightsalmon;
+    gap: 8px;
+    padding: 10px;
+}
+.grid-container > div{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.gridHeader{grid-area: Header;}
+.gridMenu{grid-area: Menu;}
+.gridRight{grid-area: Right;}
+.gridFooter{grid-area: Footer;}
+.gridMain{grid-area: Main;}
